@@ -1,0 +1,156 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.console {
+    width: 480px;
+    height: 650px;
+    background-color: #333;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.screen {
+    width: 400px;
+    height: 300px;
+    background-color: #222;
+    border-radius: 8px;
+    margin: 20px 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#gameCanvas {
+    background-color: #98cb98;
+    width: 320px;
+    height: 240px;
+}
+
+.controls {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.d-pad {
+    width: 150px;
+    height: 150px;
+    position: relative;
+}
+
+.d-pad button {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.d-pad button:active {
+    background-color: #666;
+}
+
+#up {
+    top: 0;
+    left: 50px;
+}
+
+#left {
+    left: 0;
+    top: 50px;
+}
+
+#right {
+    left: 100px;
+    top: 50px;
+}
+
+#down {
+    top: 100px;
+    left: 50px;
+}
+
+.d-pad-center {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    background-color: #333;
+    border-radius: 5px;
+}
+
+.action-buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.action-buttons button {
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    border-radius: 50%;
+    background-color: #d33;
+    color: white;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.action-buttons button:active {
+    background-color: #f55;
+}
+
+.system-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.system-buttons button {
+    width: 80px;
+    height: 30px;
+    margin: 5px;
+    background-color: #222;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.system-buttons button:active {
+    background-color: #444;
+}
+
+.game-selector {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.game-selector select, .game-selector button {
+    padding: 8px 15px;
+    margin: 10px;
+    font-size: 16px;
+}
+

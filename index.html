@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Game Console Emulator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="console">
+        <div class="screen">
+            <canvas id="gameCanvas" width="320" height="240"></canvas>
+        </div>
+        <div class="controls">
+            <div class="d-pad">
+                <button id="up">↑</button>
+                <button id="left">←</button>
+                <button id="right">→</button>
+                <button id="down">↓</button>
+                <div class="d-pad-center"></div>
+            </div>
+            <div class="action-buttons">
+                <button id="a">A</button>
+                <button id="b">B</button>
+            </div>
+            <div class="system-buttons">
+                <button id="start">START</button>
+                <button id="select">SELECT</button>
+            </div>
+        </div>
+    </div>
+    <div class="game-selector">
+        <h2>Select a Game</h2>
+        <select id="gameSelect">
+            <option value="snake">Snake</option>
+            <option value="pong">Pong</option>
+            <option value="tetris">Tetris</option>
+        </select>
+        <button id="loadGame">Load Game</button>
+    </div>
+    <script src="emulator.js"></script>
+    <script src="games/snake.js"></script>
+    <script src="games/pong.js"></script>
+    <script src="games/tetris.js"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>
+
